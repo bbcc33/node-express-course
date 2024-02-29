@@ -1,5 +1,5 @@
-//every module starts with ./ at the least
+const sayHi = (name) => {
+    console.log(`Hello there ${name}`)
+}
 
-const singleObject = "Here I am";
-
-module.exports = {singleObject};
+module.exports = sayHi

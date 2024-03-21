@@ -3,7 +3,13 @@ const app = express()
 const logger = require('./logger')
 const authorize = require('./authorize')
 //  req => middleware => res
-app.use([logger, authorize])
+
+// one use of middleware
+// app.use([logger, authorize])
+
+// second use
+// app.use(express.static('./public'))
+
 // api/home/about/products
 app.get('/', (req, res) => {
   res.send('Home')

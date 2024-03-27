@@ -1,0 +1,18 @@
+
+Quickly explain how middleware is used in an Express application.
+    - They are used as functions that are envoked before the next function.
+    They modify requests and responses.
+
+What does CRUD stand for?
+    - Create, Read, Update, and Delete
+
+You are careful to store your sensitive information in a .env file.
+How do you get your app to access the information in the .env file?
+    - In the env file I create a variable that holds my MongoDB credentials.
+    connect.js sets us up to connect to the mongoose database
+    app.js reads that connect.js file and then with the variable 'start' reads the info in the
+    .env file in order to connect to MongoDB
+    
+
+How do you protect the contents of the .env file so that it is not stored in your Github repository?
+     - I make sure the .env file name is put in the .gitignore file so github doesn't upload that info
